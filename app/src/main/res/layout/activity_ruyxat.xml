@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RuyxatActivity"
+    android:background="@drawable/fon2">
+
+    <TextView
+        android:id="@+id/txtariza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ariza Berish"
+        android:textStyle="bold"
+        android:textColor="@color/fon"
+        android:textSize="25dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="120dp"
+        />
+
+    <EditText
+        android:id="@+id/et_ar_ism"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/txtariza"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:hint="Ism"
+        android:textColorHint="@color/fon"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/fon"
+        android:textStyle="italic|bold"
+        android:background="@drawable/button_design"
+        />
+
+
+    <EditText
+        android:id="@+id/et_ar_phone"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/et_ar_ism"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:inputType="number"
+        android:layout_marginRight="35dp"
+        android:hint="Telefon raqam"
+        android:textColorHint="@color/fon"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/fon"
+        android:textStyle="italic|bold"
+        android:background="@drawable/button_design"
+        />
+
+    <EditText
+        android:id="@+id/et_ar_ariza"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/et_ar_phone"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:hint="Ariza"
+        android:textColorHint="@color/fon"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:inputType="textMultiLine"
+        android:textColor="@color/fon"
+        android:textStyle="italic|bold"
+        android:background="@drawable/button_design"
+        />
+
+    <Button
+        android:id="@+id/btn_ar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/et_ar_ariza"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Yuborish"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:background="@drawable/buttons"
+        />
+
+</RelativeLayout>

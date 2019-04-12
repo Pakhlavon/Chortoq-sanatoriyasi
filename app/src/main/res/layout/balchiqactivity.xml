@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MassajActivity"
+    android:background="@drawable/fon2">
+
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balchiq bilan davolash"
+            android:textStyle="bold"
+            android:textColor="@color/fon"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:background="@drawable/bbd"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/txtdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/massaj"
+            android:textColor="@color/fon"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Liner2"
+        android:layout_below="@+id/liner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtbogllanish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bog_lanish"
+            android:textStyle="bold|italic"
+            android:textSize="25dp"
+            android:textColor="@color/fon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/phone"
+                android:layout_marginLeft="45dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Tel:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/fon"
+                />
+            <TextView
+                android:id="@+id/txtcall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+998999923691"
+                android:textColor="@color/fon"
+                android:textStyle="bold"
+                android:onClick="txtcall"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mail"
+                android:layout_marginLeft="45dp"
+                />
+
+            <TextView
+                android:id="@+id/txtmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sihatgoh_chortoq@mail.ru"
+                android:textColor="@color/fon"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:onClick="txtmail"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/facebook"
+                android:layout_marginLeft="45dp"
+                />
+
+            <TextView
+                android:id="@+id/txtfb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://www.facebook.com"
+                android:textStyle="bold"
+                android:textColor="@color/fon"
+                android:textSize="20dp"
+                android:onClick="txtfb"
+                android:layout_marginLeft="10dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/royxat"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/txtruy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ro'yxatga yozilish"
+                android:textSize="20dp"
+                android:textColor="@color/fon"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
